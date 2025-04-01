@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Your Company Name</title>
+  <meta name="description" content="Comprehensive IT services including consulting, cybersecurity, cloud solutions, and more.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Your Company Name</h1>
+        <nav class="space-x-6">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="about.html" class="hover:underline">About Us</a>
+          <a href="services.html" class="hover:underline">Services</a>
+          <a href="blog.html" class="hover:underline">Blog</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+        <div class="flex items-center">
+          <input type="text" placeholder="Search..." class="px-3 py-2 rounded-l-md border border-gray-300">
+          <button class="bg-white text-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-100">Search</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="container mx-auto py-12 px-4">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-800 to-purple-700 rounded-2xl overflow-hidden mb-16 h-[400px]">
+      <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg')] bg-cover bg-center opacity-20"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-8 lg:px-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto">Comprehensive IT solutions tailored to your business needs</p>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="mb-20">
+      <div class="text-center mb-12">
+        <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">WHAT WE OFFER</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Our <span class="text-blue-600">Solutions</span></h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">We deliver comprehensive IT services designed to drive your business forward</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- IT Consulting -->
+        <a href="services/it-consulting.html" class="group bg-white rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+          <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center relative overflow-hidden">
+            <i class="fas fa-laptop-code text-white text-5xl group-hover:scale-110 transition-transform z-10"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">IT Consulting</h3>
+            <p class="text-gray-600 mb-4">Strategic IT planning and technology roadmaps to align with your business objectives.</p>
+            <div class="flex items-center text-blue-600 font-medium group-hover:underline">
+              <span>Learn more</span>
+              <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Software Development -->
+        <a href="services/software-development.html" class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center">
+            <i class="fas fa-code text-white text-5xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Software Development</h3>
+            <p class="text-gray-600 mb-4">Custom software solutions tailored to your specific business needs.</p>
+            <span class="text-blue-600 font-medium group-hover:underline">Learn more →</span>
+          </div>
+        </a>
+
+        <!-- Cybersecurity Services -->
+        <a href="services/cybersecurity.html" class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center">
+            <i class="fas fa-shield-alt text-white text-5xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Cybersecurity</h3>
+            <p class="text-gray-600 mb-4">Comprehensive security assessments and protection solutions.</p>
+            <span class="text-blue-600 font-medium group-hover:underline">Learn more →</span>
+          </div>
+        </a>
+
+        <!-- Cloud Solutions -->
+        <a href="services/cloud.html" class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center">
+            <i class="fas fa-cloud text-white text-5xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Cloud Solutions</h3>
+            <p class="text-gray-600 mb-4">Migration and management of cloud infrastructure and services.</p>
+            <span class="text-blue-600 font-medium group-hover:underline">Learn more →</span>
+          </div>
+        </a>
+
+        <!-- Technical Support -->
+        <a href="services/support.html" class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-yellow-500 to-yellow-700 flex items-center justify-center">
+            <i class="fas fa-headset text-white text-5xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Technical Support</h3>
+            <p class="text-gray-600 mb-4">24/7 expert support for all your IT systems and infrastructure.</p>
+            <span class="text-blue-600 font-medium group-hover:underline">Learn more →</span>
+          </div>
+        </a>
+
+        <!-- Data Analytics -->
+        <a href="services/analytics.html" class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-indigo-500 to-indigo-700 flex items-center justify-center">
+            <i class="fas fa-chart-line text-white text-5xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+            <p class="text-gray-600 mb-4">Transform your data into actionable insights with our BI solutions.</p>
+            <span class="text-blue-600 font-medium group-hover:underline">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="relative bg-gradient-to-r from-blue-800 to-purple-700 rounded-2xl overflow-hidden mb-16 h-[300px]">
+      <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg')] bg-cover bg-center opacity-20"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-8 lg:px-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to transform your IT infrastructure?</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Contact us today for a free consultation and let's discuss how we can help your business grow</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contact.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+            Get Started <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="tel:+1234567890" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 text-lg font-semibold transition-all">
+            <i class="fas fa-phone mr-2"></i> Call Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 mt-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="text-gray-600">
+        <p>© 2024 Your Company Name. All rights reserved.</p>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="text-blue-600 hover:underline">Terms of Service</a>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
