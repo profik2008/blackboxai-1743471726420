@@ -21,8 +21,9 @@
   </header>
 
   <!-- Hero Section -->
-  <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-    <div class="container mx-auto px-4 text-center">
+  <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"></div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">Cloud Management Services</h1>
       <p class="text-xl max-w-2xl mx-auto">Proactive management and optimization of your cloud environment</p>
     </div>
@@ -30,55 +31,110 @@
 
   <!-- Main Content -->
   <div class="container mx-auto px-4 py-16">
-    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+    <div class="max-w-[1200px] mx-auto bg-white rounded-xl shadow-lg p-4 md:p-8">
       <h2 class="text-3xl font-bold mb-6 text-gray-800">Comprehensive Cloud Management</h2>
       
       <div class="prose max-w-none">
         <h3 class="text-xl font-semibold mb-3 text-blue-600">Our Management Approach</h3>
         <p>We provide end-to-end cloud management services including:</p>
         <ul>
-          <li>24/7 monitoring and alerting</li>
-          <li>Cost optimization and resource right-sizing</li>
-          <li>Security and compliance management</li>
-          <li>Performance tuning and scaling</li>
-          <li>Backup and disaster recovery</li>
+          <li><strong>24/7 Monitoring & Alerting:</strong> Real-time visibility into your cloud resources with proactive alerting</li>
+          <li><strong>Cost Optimization:</strong> Right-sizing resources, reserved instance management, and waste reduction</li>
+          <li><strong>Security & Compliance:</strong> Continuous security monitoring and compliance reporting</li>
+          <li><strong>Performance Tuning:</strong> Workload optimization and auto-scaling configuration</li>
+          <li><strong>Backup & Disaster Recovery:</strong> Automated backup policies and DR testing</li>
+          <li><strong>Change Management:</strong> Controlled deployment of infrastructure changes</li>
         </ul>
+
+        <h3 class="text-xl font-semibold mt-8 mb-3 text-blue-600">Management Framework</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div class="bg-blue-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-blue-700">Governance</h4>
+            <ul class="mt-2 text-sm text-gray-600 space-y-1">
+              <li>Policy enforcement</li>
+              <li>Tagging strategy</li>
+              <li>Access controls</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-blue-700">Operations</h4>
+            <ul class="mt-2 text-sm text-gray-600 space-y-1">
+              <li>Incident management</li>
+              <li>Patch management</li>
+              <li>Performance tuning</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-blue-700">Optimization</h4>
+            <ul class="mt-2 text-sm text-gray-600 space-y-1">
+              <li>Cost analysis</li>
+              <li>Resource utilization</li>
+              <li>Architecture reviews</li>
+            </ul>
+          </div>
+        </div>
 
         <h3 class="text-xl font-semibold mt-8 mb-3 text-blue-600">Management Tools</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
           <div class="bg-blue-50 p-3 rounded-lg text-center">
             <i class="fas fa-chart-line text-blue-600 text-2xl mb-2"></i>
-            <p>Monitoring</p>
-          </div>
-          <div class="bg-blue-50 p-3 rounded-lg text-center">
-            <i class="fas fa-dollar-sign text-blue-600 text-2xl mb-2"></i>
-            <p>Cost Control</p>
+            <p>CloudHealth</p>
           </div>
           <div class="bg-blue-50 p-3 rounded-lg text-center">
             <i class="fas fa-shield-alt text-blue-600 text-2xl mb-2"></i>
-            <p>Security</p>
+            <p>Prisma Cloud</p>
           </div>
           <div class="bg-blue-50 p-3 rounded-lg text-center">
-            <i class="fas fa-sync-alt text-blue-600 text-2xl mb-2"></i>
+            <i class="fas fa-cogs text-blue-600 text-2xl mb-2"></i>
+            <p>Turbonomic</p>
+          </div>
+          <div class="bg-blue-50 p-3 rounded-lg text-center">
+            <i class="fas fa-robot text-blue-600 text-2xl mb-2"></i>
             <p>Automation</p>
           </div>
         </div>
 
-        <h3 class="text-xl font-semibold mt-8 mb-3 text-blue-600">Case Study: SaaS Provider</h3>
-        <p>Managed cloud infrastructure for a growing SaaS company:</p>
+        <h3 class="text-xl font-semibold mt-8 mb-3 text-blue-600">Case Study: Enterprise SaaS Platform</h3>
+        <p>Managed cloud infrastructure for a growing SaaS company with 500+ instances across multiple regions:</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div class="bg-blue-100 p-4 rounded-lg">
             <p class="text-2xl font-bold text-blue-800">35%</p>
-            <p class="text-sm">Cost savings</p>
+            <p class="text-sm">Cost savings achieved</p>
           </div>
           <div class="bg-blue-100 p-4 rounded-lg">
             <p class="text-2xl font-bold text-blue-800">99.99%</p>
-            <p class="text-sm">Uptime</p>
+            <p class="text-sm">Uptime maintained</p>
           </div>
           <div class="bg-blue-100 p-4 rounded-lg">
             <p class="text-2xl font-bold text-blue-800">100%</p>
-            <p class="text-sm">Compliance</p>
+            <p class="text-sm">Compliance with standards</p>
           </div>
+        </div>
+
+        <h3 class="text-xl font-semibold mt-8 mb-3 text-blue-600">Service Level Agreement</h3>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white border border-gray-200">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="py-2 px-4 border-b text-left">Metric</th>
+                <th class="py-2 px-4 border-b text-left">Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border-b">Availability</td>
+                <td class="py-2 px-4 border-b">99.9%</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="py-2 px-4 border-b">Response Time</td>
+                <td class="py-2 px-4 border-b">Under 15 minutes</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Reporting</td>
+                <td class="py-2 px-4 border-b">Monthly detailed reports</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
