@@ -29,74 +29,100 @@
     </header>
   </div>
 
-  <div class="container mx-auto py-12">
-    <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="container mx-auto py-12 px-4">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-800 to-purple-700 rounded-2xl overflow-hidden mb-16 h-[400px]">
+      <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg')] bg-cover bg-center opacity-20"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-8 lg:px-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto">We're here to help with all your IT needs</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
       <!-- Contact Form -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
-        <form class="space-y-4">
-          <div>
-            <label for="name" class="block text-gray-700 mb-2">Name</label>
-            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <div class="bg-white rounded-xl shadow-lg p-8">
+        <div class="text-center mb-8">
+          <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">GET IN TOUCH</span>
+          <h2 class="text-3xl font-bold mt-2 mb-4">Send Us a Message</h2>
+        </div>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2 font-medium">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 mb-2 font-medium">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
           </div>
           <div>
-            <label for="email" class="block text-gray-700 mb-2">Email</label>
-            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <label for="phone" class="block text-gray-700 mb-2 font-medium">Phone (Optional)</label>
+            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
           </div>
           <div>
-            <label for="phone" class="block text-gray-700 mb-2">Phone (Optional)</label>
-            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-          </div>
-          <div>
-            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-            <select id="subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <label for="subject" class="block text-gray-700 mb-2 font-medium">Subject</label>
+            <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
               <option value="">Select a subject</option>
               <option value="consultation">Consultation Request</option>
               <option value="support">Technical Support</option>
               <option value="sales">Sales Inquiry</option>
+              <option value="careers">Careers</option>
               <option value="other">Other</option>
             </select>
           </div>
           <div>
-            <label for="message" class="block text-gray-700 mb-2">Message</label>
-            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <label for="message" class="block text-gray-700 mb-2 font-medium">Message</label>
+            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
           </div>
-          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
+          <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-4 rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all transform hover:scale-[1.02] shadow-lg font-semibold">
+            Send Message <i class="fas fa-paper-plane ml-2"></i>
+          </button>
         </form>
       </div>
 
       <!-- Contact Information -->
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+      <div class="space-y-8">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="text-center mb-8">
+            <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">OUR OFFICES</span>
+            <h2 class="text-3xl font-bold mt-2 mb-4">Contact Information</h2>
+          </div>
+          <div class="space-y-6">
+            <div class="flex items-start p-4 bg-blue-50 rounded-lg transition-all hover:bg-blue-100">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-blue-600"></i>
+              </div>
               <div>
-                <h4 class="font-medium">Headquarters</h4>
+                <h4 class="font-semibold text-lg mb-1">Headquarters</h4>
                 <p class="text-gray-600">123 Tech Street, Suite 500<br>San Francisco, CA 94107</p>
               </div>
             </div>
-            <div class="flex items-center">
-              <i class="fas fa-phone-alt text-blue-600 mr-3"></i>
+            <div class="flex items-start p-4 bg-blue-50 rounded-lg transition-all hover:bg-blue-100">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-phone-alt text-blue-600"></i>
+              </div>
               <div>
-                <h4 class="font-medium">Phone</h4>
+                <h4 class="font-semibold text-lg mb-1">Phone</h4>
                 <p class="text-gray-600">(555) 123-4567</p>
               </div>
             </div>
-            <div class="flex items-center">
-              <i class="fas fa-envelope text-blue-600 mr-3"></i>
+            <div class="flex items-start p-4 bg-blue-50 rounded-lg transition-all hover:bg-blue-100">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-envelope text-blue-600"></i>
+              </div>
               <div>
-                <h4 class="font-medium">Email</h4>
+                <h4 class="font-semibold text-lg mb-1">Email</h4>
                 <p class="text-gray-600">info@yourcompany.com</p>
               </div>
             </div>
-            <div class="flex items-center">
-              <i class="fas fa-clock text-blue-600 mr-3"></i>
+            <div class="flex items-start p-4 bg-blue-50 rounded-lg transition-all hover:bg-blue-100">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-clock text-blue-600"></i>
+              </div>
               <div>
-                <h4 class="font-medium">Business Hours</h4>
+                <h4 class="font-semibold text-lg mb-1">Business Hours</h4>
                 <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
               </div>
             </div>
@@ -104,20 +130,23 @@
         </div>
 
         <!-- Social Media -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
-          <div class="flex space-x-4">
-            <a href="#" class="text-blue-600 hover:text-blue-800">
-              <i class="fab fa-linkedin text-2xl"></i>
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="text-center mb-8">
+            <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">FOLLOW US</span>
+            <h2 class="text-3xl font-bold mt-2 mb-6">Connect With Us</h2>
+          </div>
+          <div class="flex justify-center space-x-6">
+            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-all">
+              <i class="fab fa-linkedin text-xl"></i>
             </a>
-            <a href="#" class="text-blue-400 hover:text-blue-600">
-              <i class="fab fa-twitter text-2xl"></i>
+            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-200 transition-all">
+              <i class="fab fa-twitter text-xl"></i>
             </a>
-            <a href="#" class="text-gray-700 hover:text-black">
-              <i class="fab fa-github text-2xl"></i>
+            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-gray-700 hover:bg-blue-200 transition-all">
+              <i class="fab fa-github text-xl"></i>
             </a>
-            <a href="#" class="text-red-600 hover:text-red-800">
-              <i class="fab fa-youtube text-2xl"></i>
+            <a href="#" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-red-600 hover:bg-blue-200 transition-all">
+              <i class="fab fa-youtube text-xl"></i>
             </a>
           </div>
         </div>
@@ -125,16 +154,32 @@
     </div>
 
     <!-- Map -->
-    <div class="mt-12 bg-white p-1 rounded-lg shadow-md">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-16">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.158572889518!2d-122.4036649243696!3d37.7877439719805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f0a1c0f0f%3A0xf1a3c1b0e5b9f0b5!2s123%20Tech%20St%2C%20San%20Francisco%2C%20CA%2094107!5e0!3m2!1sen!2sus!4v1714567890" 
               width="100%" 
               height="450" 
               style="border:0;" 
               allowfullscreen="" 
               loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              class="rounded-lg">
+              referrerpolicy="no-referrer-when-downgrade">
       </iframe>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="relative bg-gradient-to-r from-blue-800 to-purple-700 rounded-2xl overflow-hidden mb-16 h-[300px]">
+      <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg')] bg-cover bg-center opacity-20"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-8 lg:px-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Need Immediate Assistance?</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Our support team is available 24/7 for critical issues</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="tel:+15551234567" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+            <i class="fas fa-phone-alt mr-2"></i> Call Now
+          </a>
+          <a href="mailto:support@yourcompany.com" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 text-lg font-semibold transition-all">
+            <i class="fas fa-envelope mr-2"></i> Email Support
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
