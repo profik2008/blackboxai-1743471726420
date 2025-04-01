@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Your Company Name</title>
+  <meta name="description" content="Get in touch with our IT experts for inquiries, support, or consultation requests.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Your Company Name</h1>
+        <nav class="space-x-6">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="about.html" class="hover:underline">About Us</a>
+          <a href="services.html" class="hover:underline">Services</a>
+          <a href="blog.html" class="hover:underline">Blog</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+        <div class="flex items-center">
+          <input type="text" placeholder="Search..." class="px-3 py-2 rounded-l-md border border-gray-300">
+          <button class="bg-white text-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-100">Search</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="container mx-auto py-12">
+    <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Form -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-gray-700 mb-2">Name</label>
+            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 mb-2">Email</label>
+            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+            <label for="phone" class="block text-gray-700 mb-2">Phone (Optional)</label>
+            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+            <select id="subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="">Select a subject</option>
+              <option value="consultation">Consultation Request</option>
+              <option value="support">Technical Support</option>
+              <option value="sales">Sales Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 mb-2">Message</label>
+            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+              <div>
+                <h4 class="font-medium">Headquarters</h4>
+                <p class="text-gray-600">123 Tech Street, Suite 500<br>San Francisco, CA 94107</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone-alt text-blue-600 mr-3"></i>
+              <div>
+                <h4 class="font-medium">Phone</h4>
+                <p class="text-gray-600">(555) 123-4567</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-blue-600 mr-3"></i>
+              <div>
+                <h4 class="font-medium">Email</h4>
+                <p class="text-gray-600">info@yourcompany.com</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock text-blue-600 mr-3"></i>
+              <div>
+                <h4 class="font-medium">Business Hours</h4>
+                <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="#" class="text-blue-400 hover:text-blue-600">
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-gray-700 hover:text-black">
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="#" class="text-red-600 hover:text-red-800">
+              <i class="fab fa-youtube text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="mt-12 bg-white p-1 rounded-lg shadow-md">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.158572889518!2d-122.4036649243696!3d37.7877439719805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f0a1c0f0f%3A0xf1a3c1b0e5b9f0b5!2s123%20Tech%20St%2C%20San%20Francisco%2C%20CA%2094107!5e0!3m2!1sen!2sus!4v1714567890" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-lg">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 mt-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="text-gray-600">
+        <p>© 2024 Your Company Name. All rights reserved.</p>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="text-blue-600 hover:underline">Terms of Service</a>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
