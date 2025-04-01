@@ -29,25 +29,63 @@
     </header>
   </div>
 
-  <div class="container mx-auto py-12">
-    <h2 class="text-3xl font-semibold mb-8">Privacy Policy</h2>
-    
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <div class="prose max-w-none">
-        <p class="text-gray-600 mb-4">Last Updated: January 1, 2024</p>
+  <div class="container mx-auto py-12 px-4">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-800 to-purple-700 rounded-2xl overflow-hidden mb-16 h-[400px]">
+      <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg')] bg-cover bg-center opacity-20"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-8 lg:px-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto">Your privacy is important to us</p>
+      </div>
+    </div>
 
-        <h3 class="text-2xl font-semibold mb-4">1. Introduction</h3>
-        <p class="text-gray-600 mb-6">
-          Your Company Name ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
-        </p>
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+        <div class="text-center mb-8">
+          <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">LAST UPDATED: JANUARY 1, 2024</span>
+        </div>
 
-        <h3 class="text-2xl font-semibold mb-4">2. Information We Collect</h3>
-        <p class="text-gray-600 mb-4">We may collect the following types of information:</p>
-        <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
-          <li><strong>Personal Data:</strong> Name, email address, phone number, etc. that you voluntarily provide.</li>
-          <li><strong>Usage Data:</strong> Information about how you use our website, including IP address, browser type, pages visited.</li>
-          <li><strong>Cookies:</strong> We use cookies to enhance your experience on our site.</li>
-        </ul>
+        <div class="prose max-w-none">
+          <div class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">1. Introduction</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Your Company Name ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+            </p>
+          </div>
+
+          <div class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">2. Information We Collect</h2>
+            <p class="text-gray-600 mb-4">We may collect the following types of information:</p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                  <i class="fas fa-user text-blue-600 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Personal Data</h4>
+                  <p class="text-gray-600">Name, email address, phone number, etc. that you voluntarily provide.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                  <i class="fas fa-chart-line text-blue-600 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Usage Data</h4>
+                  <p class="text-gray-600">Information about how you use our website, including IP address, browser type, pages visited.</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                  <i class="fas fa-cookie text-blue-600 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Cookies</h4>
+                  <p class="text-gray-600">We use cookies to enhance your experience on our site.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
 
         <h3 class="text-2xl font-semibold mb-4">3. How We Use Your Information</h3>
         <p class="text-gray-600 mb-4">We may use the information we collect for various purposes, including:</p>
@@ -90,19 +128,50 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-100 py-8 mt-12">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-      <div class="text-gray-600">
-        <p>© 2024 Your Company Name. All rights reserved.</p>
+  <!-- Updated Footer -->
+  <footer class="bg-white border-t border-gray-200 py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between">
+        <!-- Company Info -->
+        <div class="mb-8 md:mb-0">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Your Company</h3>
+          <p class="text-gray-600 max-w-xs mb-4">Transforming businesses through innovative IT solutions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-4">Navigation</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a></li>
+              <li><a href="services.html" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a></li>
+              <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors">About</a></li>
+              <li><a href="blog.html" class="text-gray-600 hover:text-blue-600 transition-colors">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="privacy-policy.html" class="text-gray-600 hover:text-blue-600 transition-colors">Privacy</a></li>
+              <li><a href="terms.html" class="text-gray-600 hover:text-blue-600 transition-colors">Terms</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a>
-        <a href="terms.html" class="text-blue-600 hover:underline">Terms of Service</a>
-      </div>
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-200 mt-8 pt-8 text-center">
+        <p class="text-gray-500 text-sm">
+          © 2024 Your Company. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
